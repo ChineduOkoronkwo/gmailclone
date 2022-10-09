@@ -19,7 +19,6 @@ class MainActivity : ComponentActivity() {
             GmailcloneTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
-//                    modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
                     GmailApp()
@@ -32,11 +31,9 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun GmailApp() {
     val scaffoldState = rememberScaffoldState()
-    val coroutineScope = rememberCoroutineScope()
-    val scrollState = rememberScrollState()
     Scaffold(scaffoldState = scaffoldState,
-        topBar = { HomeAppBar(scaffoldState, coroutineScope) },
-        drawerContent = { GmailDrawerMenu(scrollState) }
+        topBar = { HomeAppBar(scaffoldState, rememberCoroutineScope()) },
+        drawerContent = { GmailDrawerMenu(rememberScrollState()) }
     ) {
 
     }
