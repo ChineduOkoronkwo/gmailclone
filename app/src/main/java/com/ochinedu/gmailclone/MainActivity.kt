@@ -11,6 +11,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.ochinedu.gmailclone.components.GmailDrawerMenu
 import com.ochinedu.gmailclone.components.HomeAppBar
 import com.ochinedu.gmailclone.components.HomeBottomMenu
+import com.ochinedu.gmailclone.components.MailList
 import com.ochinedu.gmailclone.ui.theme.GmailcloneTheme
 
 class MainActivity : ComponentActivity() {
@@ -37,7 +38,7 @@ fun GmailApp() {
         drawerContent = { GmailDrawerMenu(rememberScrollState()) },
         bottomBar = { HomeBottomMenu()}
     ) {
-
+        MailList(it)
     }
 }
 
