@@ -19,9 +19,9 @@ val mailList = listOf(
     ),
     MailData(
         mailId = 3,
-        userName = "Chloe",
+        userName = "Jayamma",
         subject = "Flutter News",
-        body = "Hello Cecilia we have got exciting addition  to the Flutter api",
+        body = "Hello Jay we have got exciting addition  to the Flutter api",
         timestamp = "20:10"
     ),
     MailData(
