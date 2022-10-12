@@ -1,5 +1,6 @@
 package com.ochinedu.gmailclone
 
+import com.ochinedu.gmailclone.model.Account
 import com.ochinedu.gmailclone.model.MailData
 
 val mailList = listOf(
@@ -73,4 +74,12 @@ val mailList = listOf(
         body = "We have an opening that suits your profile kindly check it out and indicate your interest",
         timestamp = "20:10"
     )
+)
+
+val accountsList = listOf<Account>(
+    Account(icon = R.drawable.my_avator, username = "Alfred Okoronkwo", email = "alfred.okoronkwo@gmail.com", unreadMails = 54),
+    Account(username = "Nene Okoronkwo", email = "nene.okoronkwo@cmail.com", unreadMails = 80),
+    Account(username = "Jayamma Okoronkwo", email = "jaylulu@cmail.com", unreadMails = 66),
+    Account(username = "Nathan Okoronkwo", email = "nebubu@cmail.com", unreadMails = 10),
+    Account(username = "Chloe Okoronkwo", email = "kloklo@cmail.com", unreadMails = 73)
 )
